@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProtoSite - Digital Experiences</title>
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <span class="logo-letter">P</span>
+          <span class="logo-text">ProtoSite</span>
+        </div>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="index.html">Dashboard</a>
+          <a href="contact.html" class="active">Contact</a>
+        </div>
+
+        <button class="get-started-btn">Get Started</button>
+
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 12H21M3 6H21M3 18H21"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="row section-1">
+        <div class="middle-1 col-12 row">
+          <h1 class="h-1 col-6">Get In Touch</h1>
+          <p class="p-1 col-6">
+            Have a project in mind? Let's discuss how we can help bring your
+            vision to life.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-2 container">
+        <div class="Contact-Information col-6 row">
+          <h2>Contact Information</h2>
+          <p>
+            Fill out the form and our team will get back to you within 24 hours.
+          </p>
+
+          <div class="box-info">
+            <div class="info-1 row">
+              <div class="img-1">
+                <img src="./assets/MailIcon.svg" alt="MailIcon" />
+              </div>
+              <div class="content" style="margin-bottom: 0%">
+                <h4>Email</h4>
+                <!-- There is a proplem the link dose not send  to the mail  -->
+                <a href="esraasaber0299@gmail.com">contact@protosite.com</a>
+              </div>
+            </div>
+
+            <div class="info-2 row">
+              <div class="img-2">
+                <img src="./assets/PhoneIcon.svg" alt="PhoneIcon" />
+              </div>
+              <div class="content">
+                <h4>Phone</h4>
+                <p class="p-content">+1 (555) 123-4567</p>
+              </div>
+            </div>
+
+            <div class="info-3 row">
+              <div class="img-3">
+                <img src="./assets/MapPinIcon (1).svg" alt="MapPinIcon" />
+              </div>
+              <div class="content">
+                <h4>Office</h4>
+                <p class="p-content">123 Tech Street</p>
+                <p class="p-content">San Francisco, CA 94107</p>
+              </div>
+            </div>
+          </div>
+          <div class="Offic-Hours row">
+            <h4 class="heading">Office Hours</h4>
+            <p class="pargraph">
+              Monday - Friday: 9:00 AM - 6:00 PM PST Saturday - Sunday: Closed
+            </p>
+          </div>
+        </div>
+
+        <div class="Form-Contact col-6 row">
+          <div class="First-container-form col-6">
+            <div class="Form-Completion">
+              <h3>Form Completion</h3>
+              <div>
+                <p style="color: #0066ff">17%</p>
+                <progress id="file" value="17" max="100"></progress>
+              </div>
+            </div>
+          </div>
+          <div class="parent-form col-6 row">
+            <form class="native row col-12 row" method="get">
+              <div class="input-1 col-1">
+                <label for="fname">First name </label>
+                <span>*</span><br /><br />
+                <input
+                  class="type"
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  required
+                />
+              </div>
+
+              <div class="input-2 col-1.5">
+                <label for="Email"> Email</label>
+                <span class="Optional">(Optional)</span
+                ><br /><br />
+                <input
+                  class="type"
+                  type="text"
+                  id="Email"
+                  name="Email"
+                  required
+                />
+              </div>
+
+              <div class="input-3 col-1.5">
+                <label for="Phone Number">Phone Number </label>
+                <span>*</span><br /><br />
+                <input
+                  class="type"
+                  type="number"
+                  id="Phone Number"
+                  name="Phone Number"
+                  placeholder="+1 (555) 123-4567"
+                />
+              </div>
+
+              <div class="input-4 col-1.5">
+                <label for="Purpose">Purpose</label>
+                <span>*</span><br /><br />
+                <input class="type" type="text" id="Purpose" name="Purpose" />
+              </div>
+
+              <div class="Preferred-Contact-Method col-1.5">
+                <div class="Preferred">
+                  <label for="/">
+                    <p style="display: inline-block">
+                      Preferred Contact Method
+                    </p>
+                    <span>*</span>
+                  </label>
+                </div>
+                <div class="radio-button col-1">
+                  <input
+                    type="radio"
+                    id="Email"
+                    name="Preferred Contact Method"
+                    value="Email"
+                  />
+                  <label for="Email">Email</label>
+                  <input
+                    type="radio"
+                    id="Phone"
+                    name="Preferred Contact Method"
+                    value="Phone"
+                  
+                  />
+                  <label for="Phone">Phone</label>
+                </div>
+              </div>
+
+              <div class="Message col-1.5">
+                <p>
+                  <label for="Message">Message <span>*</span></label>
+                </p>
+                <textarea
+                  id="Message"
+                  name="Message"
+                  rows="4"
+                  cols="50"
+                  placeholder=" Tell us about your project..."
+                ></textarea>
+              </div>
+
+              <div class="Attachment col-1.5">
+                <label for="Attachment"
+                  >Attachment
+                  <span class="Optional" style="color: #adb5bd"
+                    >(Optional - PDF, Images)</span
+                  >
+                </label>
+                <label for="myfile" class="myfile"
+                  ><img src="./assets/upload.svg" alt="cloud" />
+                  <input type="file" id="Attachment"
+                /></label>
+              </div>
+
+              <label for="checkbox" class="checkbox"
+                ><input
+                  type="checkbox"
+                  id="checkbox"
+                  name="vehicle1"
+                  value="Bike"
+                />
+                I agree to the Terms of Service and Privacy Policy *</label
+              >
+
+              <button class="button" type="button" value="button">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-top container">
+        <div class="footer-text">
+          <h6>Stay Updated</h6>
+          <p>
+            Subscribe to our newsletter for the latest updates and insights.
+          </p>
+        </div>
+        <form class="footer-email">
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer-middle">
+        <div class="container">
+          <div class="col about">
+            <div class="logo">
+              <img src="./assets/logo.svg" alt="logo" />
+              <span class="logo-text">ProtoSite</span>
+            </div>
+            <p class="brand-desc">
+              Building the future with modern web technologies and innovative
+              solutions.
+            </p>
+            <div class="social">
+              <a href="#" aria-label="X"><img src="./assets/x.svg" alt="" /></a>
+              <a href="#" aria-label="LinkedIn"
+                ><img src="./assets/linkdin.svg" alt=""
+              /></a>
+              <a href="#" aria-label="GitHub"
+                ><img src="./assets/github.svg" alt=""
+              /></a>
+            </div>
+          </div>
+
+          <div class="col links">
+            <h6>Quick Links</h6>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col services">
+            <h6>Services</h6>
+            <ul>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Mobile Apps</a></li>
+              <li><a href="#">Cloud Solutions</a></li>
+              <li><a href="#">UI/UX Design</a></li>
+              <li><a href="#">Consulting</a></li>
+            </ul>
+          </div>
+
+          <div class="col contact">
+            <h6>Contact Us</h6>
+            <div class="contact-line">
+              <img src="./assets/mail.svg" alt="main" />
+              <a href="mailto:contact@protosite.com">contact@protosite.com</a>
+            </div>
+            <div class="contact-line">
+              <img src="./assets/phone.svg" alt="phone icon" /> +1 (555)
+              123-4567
+            </div>
+            <div class="contact-line">
+              <img src="./assets/map-pin.svg" alt="pin" /> 123 Tech Street, San
+              Francisco, CA 94107
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom container">
+        <p>© 2025 ProtoSite. All rights reserved.</p>
+        <nav class="footer-nav">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

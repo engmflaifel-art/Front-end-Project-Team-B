@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>protosite</title>
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <span class="logo-letter">P</span>
+          <span class="logo-text">ProtoSite</span>
+        </div>
+
+        <div class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="index.html">Dashboard</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <button class="get-started-btn">Get Started</button>
+
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 12H21M3 6H21M3 18H21"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="gradient-under-button"></div>
+
+      <div class="hero-text">
+        <div class="hero-top">
+          <div class="hero-image-side">
+            <img src="assets/dot.svg" alt="New Available" class="dot" />
+            <span class="tag-text">New Available</span>
+          </div>
+        </div>
+
+        <h1>Build Amazing Digital Experiences</h1>
+        <p>
+          Transform your ideas into powerful web applications with our
+          cutting-edge technology stack and expert development team.
+        </p>
+
+        <div class="buttons">
+          <a href="contact.html" class="btn-dark"
+            >Get Started
+            <img src="assets/Vector (1).svg" alt="Vector" />
+          </a>
+          <a href="services.html" class="btn-light">Explore Services</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="assets/hero sec1.png" alt="Hero Image" />
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <div class="section-header">
+          <h2>Why Choose Us</h2>
+          <p>
+            We deliver exceptional results through innovation, expertise, and
+            dedication to your success.
+          </p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="assets/RocketIcon.svg" alt="Fast Delivery" />
+            </div>
+            <h3>Fast Delivery</h3>
+            <p>
+              Rapid development cycles without compromising on quality or
+              performance.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="assets/ShieldIcon.svg" alt="Secure & Reliable" />
+            </div>
+            <h3>Secure & Reliable</h3>
+            <p>
+              Enterprise-grade security and 99.9% uptime guarantee for your
+              peace of mind.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="assets/ChartIcon.svg" alt="Scalable Solutions" />
+            </div>
+            <h3>Scalable Solutions</h3>
+            <p>
+              Architecture designed to grow with your business, from startup to
+              enterprise.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Projects Delivered</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">Client Satisfaction</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Team Members</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Support Available</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ready-section">
+      <div class="ready-content">
+        <h2>Ready to Start Your Project?</h2>
+        <p>
+          Let's discuss how we can help bring your vision to life with our
+          expert team and proven processes.
+        </p>
+        <a href="contact.html" class="ready-btn"
+          >Schedule a Consultation <img src="assets/Vector (1).svg" alt="arrow"
+        /></a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-top container">
+        <div class="footer-text">
+          <h6>Stay Updated</h6>
+          <p>
+            Subscribe to our newsletter for the latest updates and insights.
+          </p>
+        </div>
+        <form class="footer-email">
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer-middle">
+        <div class="container">
+          <div class="col about">
+            <div class="logo">
+              <img src="./assets/logo.svg" alt="logo" />
+              <span class="logo-text">ProtoSite</span>
+            </div>
+            <p class="brand-desc">
+              Building the future with modern web technologies and innovative
+              solutions.
+            </p>
+            <div class="social">
+              <a href="#" aria-label="X"><img src="./assets/x.svg" alt="" /></a>
+              <a href="#" aria-label="LinkedIn"
+                ><img src="./assets/linkdin.svg" alt=""
+              /></a>
+              <a href="#" aria-label="GitHub"
+                ><img src="./assets/github.svg" alt=""
+              /></a>
+            </div>
+          </div>
+
+          <div class="col links">
+            <h6>Quick Links</h6>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col services">
+            <h6>Services</h6>
+            <ul>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Mobile Apps</a></li>
+              <li><a href="#">Cloud Solutions</a></li>
+              <li><a href="#">UI/UX Design</a></li>
+              <li><a href="#">Consulting</a></li>
+            </ul>
+          </div>
+
+          <div class="col contact">
+            <h6>Contact Us</h6>
+            <div class="contact-line">
+              <img src="./assets/mail.svg" alt="main" />
+              <a href="mailto:contact@protosite.com">contact@protosite.com</a>
+            </div>
+            <div class="contact-line">
+              <img src="./assets/phone.svg" alt="phone icon" /> +1 (555)
+              123-4567
+            </div>
+            <div class="contact-line">
+              <img src="./assets/map-pin.svg" alt="pin" /> 123 Tech Street, San
+              Francisco, CA 94107
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom container">
+        <p>© 2025 ProtoSite. All rights reserved.</p>
+        <nav class="footer-nav">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

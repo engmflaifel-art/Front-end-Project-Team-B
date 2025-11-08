@@ -1,0 +1,256 @@
+/***************************** Start About Page Styles ***************************/
+.about-page {
+  background-color: #fff;
+}
+.about-hero {
+  padding: 4rem 0 1rem;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a2e;
+  font-weight: 600;
+}
+
+.about-description {
+  font-size: 1.25rem;
+  color: #64666b;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mission-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #eef2ff;
+  color: #0052ff;
+  padding: 0.75rem 1.75rem;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.mission-badge .icon {
+  font-size: 1.25rem;
+}
+
+.mission-section {
+  max-width: 850px;
+  padding: 0 2rem;
+}
+
+.mission-section h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #1a1a2e;
+  font-weight: 600;
+}
+
+.mission-description {
+  font-size: 1.2rem;
+  color: #1a1a2e;
+  line-height: 1.6;
+  margin-bottom: 1.75rem;
+  font-weight: 500;
+}
+
+.mission-subtext {
+  font-size: 1.1rem;
+  color: #64666b;
+  line-height: 1.7;
+  margin-bottom: 3.5rem;
+}
+
+.mission-points {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.mission-point {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.15rem;
+  color: #1a1a2e;
+  font-weight: 500;
+}
+
+.check-icon {
+  color: #0052ff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Excellence Section */
+.excellence-section {
+  margin: 3rem 0;
+  padding: 6rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.excellence-content h2 {
+  font-size: 3rem;
+  margin-bottom: 1.25rem;
+  color: #1a1a2e;
+  font-weight: 600;
+}
+
+.excellence-description {
+  color: #64666b;
+  font-size: 1.2rem;
+  margin-bottom: 4rem;
+  line-height: 1.6;
+}
+
+.excellence-cards {
+  display: flex;
+  gap: 2.5rem;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.excellence-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  flex: 1;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.card-number {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  background-color: #0066ff;
+  line-height: 0.5;
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 14px;
+}
+
+.excellence-card .card-content {
+  flex: 1;
+}
+
+.excellence-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+  color: #1a1a2e;
+  font-weight: 600;
+}
+
+.excellence-card p {
+  color: #64666b;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Experts Section */
+.experts-section {
+  padding: 7rem 0;
+  text-align: center;
+}
+
+.experts-section h2 {
+  font-size: 3rem;
+  margin-bottom: 1.25rem;
+  color: #1a1a2e;
+  font-weight: 600;
+}
+
+.experts-description {
+  color: #64666b;
+  font-size: 1.2rem;
+  margin-bottom: 4rem;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.expert-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.stat-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0052ff;
+  line-height: 1;
+}
+
+.stat-label {
+  color: #64666b;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Join Section */
+.join-section {
+  padding: 7rem 2rem;
+  text-align: center;
+  background: linear-gradient(to bottom, #1a1a2e, #2d3561);
+  color: white;
+}
+
+.join-section h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.join-section p {
+  color: #a8b1ff;
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.view-positions-btn {
+  background-color: white;
+  color: #1a1a2e;
+  padding: 1.1rem 2.5rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-positions-btn:hover {
+  background-color: #0052ff;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 82, 255, 0.3);
+}
+
+/***************************** End About Page Styles ***************************/

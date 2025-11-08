@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>protosite</title>
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/services.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <span class="logo-letter">P</span>
+          <span class="logo-text">ProtoSite</span>
+        </div>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html" class="active">Services</a>
+          <a href="index.html">Dashboard</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <button class="get-started-btn">Get Started</button>
+
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 12H21M3 6H21M3 18H21"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="services">Our Services</div>
+      <p class="services-p">
+        comprehensive solutions designed to meet your business needs,from
+        concept to deployment and beyond
+      </p>
+
+      <div class="content">
+        <div class="card">
+          <div id="icon1" class="service_icon">
+            <img src="assets/RocketIcon.png" alt="RocketIcon" />
+          </div>
+          <div class="info">
+            <h3 class="service_name">Web Development</h3>
+            <p class="service_desc">
+              custom web application built withe modern frameworks and best
+              practices for optimal performance
+            </p>
+            <ul class="service_list">
+              <li class="service_list_item">React & Next.js</li>
+              <li class="service_list_item">Node.js Backend</li>
+              <li class="service_list_item">API Integration</li>
+              <li class="service_list_item">Cloud Deployment</li>
+            </ul>
+            <a href="services.html">Learn More→ </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div id="icon2" class="service_icon">
+            <img src="assets/SparklesIcon.png" alt="SparklesIcon" />
+          </div>
+          <div class="info">
+            <h3 class="service_name">UI/UX Design</h3>
+            <p class="service_desc">
+              Beautiful, intuitive interfaces designed with your users in mind,
+              backed by research and testing.
+            </p>
+            <ul class="service_list">
+              <li class="service_list_item">User Research</li>
+              <li class="service_list_item">Wire framing</li>
+              <li class="service_list_item">Prototyping</li>
+              <li class="service_list_item">Design Systems</li>
+            </ul>
+            <a href="services.html">Learn More→ </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div id="icon3" class="service_icon">
+            <img src="assets/ChartIcon.png" alt="ChartIcon" />
+          </div>
+          <div class="info">
+            <h3 class="service_name">Mobile Development</h3>
+            <p class="service_desc">
+              Native and cross-platform mobile applications that deliver
+              seamless experiences on any device.
+            </p>
+            <ul class="service_list">
+              <li class="service_list_item">iOS & Android</li>
+              <li class="service_list_item">React Native</li>
+              <li class="service_list_item">Progressive Web Apps</li>
+              <li class="service_list_item">App Store Publishing</li>
+            </ul>
+            <a href="services.html">Learn More→ </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div id="icon4" class="service_icon">
+            <img src="assets/ShieldIcon.png" alt="ShieldIcon" />
+          </div>
+          <div class="info">
+            <h3 class="service_name">Cloud Solutions</h3>
+            <p class="service_desc">
+              Scalable cloud infrastructure and migration services to power your
+              growing business needs.
+            </p>
+            <ul class="service_list">
+              <li class="service_list_item">AWS & Azure</li>
+              <li class="service_list_item">Docker & Kubernetes</li>
+              <li class="service_list_item">CI/CD Pipelines</li>
+              <li class="service_list_item">Infrastructure as Code</li>
+            </ul>
+            <a href="services.html">Learn More→ </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div id="icon5" class="service_icon">
+            <img src="assets/CogIcon.png" alt="CogIcon" />
+          </div>
+          <div class="info">
+            <h3 class="service_name">DevOps & Automation</h3>
+            <p class="service_desc">
+              Streamline your development workflow with automated testing,
+              deployment, and monitoring.
+            </p>
+            <ul class="service_list">
+              <li class="service_list_item">Automated Testing</li>
+              <li class="service_list_item">Continuous Deployment</li>
+              <li class="service_list_item">Performance Monitoring</li>
+              <li class="service_list_item">Security Scanning</li>
+            </ul>
+            <a href="services.html">Learn More→ </a>
+          </div>
+        </div>
+        <div class="card">
+          <div id="icon6" class="service_icon">
+            <img src="assets/UsersIcon.png" alt="UsersIcon" />
+          </div>
+          <div class="info">
+            <h3 class="service_name">Consulting & Strategy</h3>
+            <p class="service_desc">
+              Expert guidance on technology choices,architecture decisions,and
+              digital transformation.
+            </p>
+            <ul class="service_list">
+              <li class="service_list_item">Technology Audit</li>
+              <li class="service_list_item">Architecture</li>
+              <li class="service_list_item">Team Training</li>
+              <li class="service_list_item">Best Practices</li>
+            </ul>
+            <a href="services.html">Learn More→ </a>
+          </div>
+        </div>
+      </div>
+
+      <section class="pricing-section">
+        <h2 class="title">Flexible Pricing</h2>
+        <p class="subtitle">
+          Choose the engagement model that works best for your project and
+          budget.
+        </p>
+        <div class="pricing-card">
+          <div class="mini-title">Most Popular</div>
+          <h3 class="plan-title">Professional</h3>
+          <p class="price">$15,000</p>
+          <span>per project</span>
+          <ul class="features">
+            <li>Multi-page application</li>
+            <li>custom UI/UX design</li>
+            <li>Advanced SEO & analytics</li>
+            <li>3 months support</li>
+            <li>API integrations</li>
+            <li>performance optimization</li>
+          </ul>
+          <button class="btn">Get Started</button>
+        </div>
+      </section>
+
+      <section class="get-start">
+        <h2 id="get">Ready to Get Started?</h2>
+        <p class="start-p">
+          Lets discuss your project and find the perfect solution for your needs
+        </p>
+        <button class="btn2">Schedule a Call</button>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-top container">
+        <div class="footer-text">
+          <h6>Stay Updated</h6>
+          <p>
+            Subscribe to our newsletter for the latest updates and insights.
+          </p>
+        </div>
+        <form class="footer-email">
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer-middle">
+        <div class="container">
+          <div class="col about">
+            <div class="logo">
+              <img src="./assets/logo.svg" alt="logo" />
+              <span class="logo-text">ProtoSite</span>
+            </div>
+            <p class="brand-desc">
+              Building the future with modern web technologies and innovative
+              solutions.
+            </p>
+            <div class="social">
+              <a href="#" aria-label="X"><img src="./assets/x.svg" alt="" /></a>
+              <a href="#" aria-label="LinkedIn"
+                ><img src="./assets/linkdin.svg" alt=""
+              /></a>
+              <a href="#" aria-label="GitHub"
+                ><img src="./assets/github.svg" alt=""
+              /></a>
+            </div>
+          </div>
+
+          <div class="col links">
+            <h6>Quick Links</h6>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col services">
+            <h6>Services</h6>
+            <ul>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Mobile Apps</a></li>
+              <li><a href="#">Cloud Solutions</a></li>
+              <li><a href="#">UI/UX Design</a></li>
+              <li><a href="#">Consulting</a></li>
+            </ul>
+          </div>
+
+          <div class="col contact">
+            <h6>Contact Us</h6>
+            <div class="contact-line">
+              <img src="./assets/mail.svg" alt="main" />
+              <a href="mailto:contact@protosite.com">contact@protosite.com</a>
+            </div>
+            <div class="contact-line">
+              <img src="./assets/phone.svg" alt="phone icon" /> +1 (555)
+              123-4567
+            </div>
+            <div class="contact-line">
+              <img src="./assets/map-pin.svg" alt="pin" /> 123 Tech Street, San
+              Francisco, CA 94107
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom container">
+        <p>© 2025 ProtoSite. All rights reserved.</p>
+        <nav class="footer-nav">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

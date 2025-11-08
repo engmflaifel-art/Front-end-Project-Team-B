@@ -1,0 +1,76 @@
+/* 1. Global Box-Sizing Reset */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth; /* For accessibility/modern sites */
+}
+
+/* 2. Remove Default Margins and Padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+figure,
+table,
+caption,
+fieldset,
+legend,
+hr,
+button,
+input,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* 3. Improve Media and Typography */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 4. Accessibility & Cleanup */
+::selection {
+  text-shadow: none;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+}
