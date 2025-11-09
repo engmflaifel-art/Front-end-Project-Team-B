@@ -16,6 +16,7 @@ main .services {
 .content {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 80px;
@@ -30,13 +31,26 @@ main .services {
   justify-content: center;
   /* align-items: center; */
   flex-direction: column;
-  max-width: 350px;
+  width: 30%;
+  max-width: 400px;
   background-color: white;
   height: 443px;
   border: 1.8px solid #dee2e6;
   border-radius: 16px;
   padding: 34px;
   margin: 20px 2px 5px 2px;
+}
+
+@media (max-width: 1000px) {
+  .card {
+    width: 49%;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
 }
 
 .service_icon {
@@ -240,8 +254,5 @@ span {
 @media (max-width: 600px) {
   .content {
     flex-direction: column;
-  }
-  p {
-    text-align: center;
   }
 }
