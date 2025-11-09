@@ -71,6 +71,6 @@ a {
 button {
   background: none;
   color: inherit;
-  border: none;
+  /* border: none; */
   cursor: pointer;
 }
