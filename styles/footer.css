@@ -1,7 +1,7 @@
 /* --------------------- container --------------------- */
 
 .container {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -39,6 +39,12 @@ footer .footer-text {
   gap: 0.5rem;
 }
 
+@media (max-width: 600px) {
+  footer .footer-text {
+    width: unset;
+  }
+}
+
 footer p {
   color: #adb5bd;
   font-size: 16px;
@@ -55,21 +61,28 @@ footer .footer-email {
   width: 100%;
   display: flex;
   gap: 0.5rem;
-  max-width: 600px;
+  max-width: 50%;
+}
+
+@media (max-width: 600px) {
+  footer .footer-email {
+    max-width: unset;
+  }
 }
 
 footer .footer-email input[type='email'] {
-  border: 1px solid #343a40;
   border-radius: 4px;
   font-size: 16px;
   background-color: #212529;
+  outline: none;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
 }
 
 footer .footer-email input[type='email'],
 footer .footer-email button {
   border-radius: 14px;
   padding: 1rem;
-  max-width: 470px;
   width: 100%;
 }
 
