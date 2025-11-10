@@ -1,9 +1,9 @@
 /* ===== Hero Section ===== */
 .hero {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 80px 4%;
   background: linear-gradient(
     135deg,
@@ -12,22 +12,9 @@
   );
   gap: 30px;
   position: relative;
-  margin-top: 80px;
+
   overflow: hidden;
   width: 100%;
-}
-.hero .gradient-under-button {
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  background: rgba(26, 26, 46, 0.1);
-  border-radius: 50%;
-  bottom: 50px;
-  right: 30%;
-  transform: translateX(50%);
-  z-index: 0;
-  filter: blur(128px);
-  opacity: 0.8;
 }
 
 .hero::before {
@@ -35,35 +22,20 @@
   position: absolute;
   width: 600px;
   height: 600px;
-  background: radial-gradient(
-    circle,
-    rgba(0, 102, 255, 0.1) 0%,
-    rgba(0, 102, 255, 0) 70%
-  );
+  background: rgba(0, 102, 255, 0.1);
   border-radius: 50%;
   top: -200px;
   right: -200px;
   z-index: 0;
-}
-
-.hero::after {
-  content: '';
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  background: rgba(0, 102, 255, 0.5);
-  border-radius: 50%;
-  bottom: 50px;
-  right: 100px;
-  filter: blur(80px);
-  z-index: 0;
+  filter: blur(128px);
 }
 
 .hero-text {
-  flex: 1 1 500px;
+  flex: 1;
   max-width: 600px;
-  padding: 20px;
   text-align: left;
+  z-index: 2;
+  order: 1;
 }
 
 .hero-top {
@@ -89,12 +61,12 @@
 .hero-image-side .tag-text {
   font-size: 14px;
   color: rgba(0, 102, 255, 1);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .hero-text h1 {
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 400;
   color: #0a0a0a;
   margin-bottom: 16px;
   line-height: 1.2;
@@ -157,22 +129,63 @@
 }
 
 .hero-image {
-  flex: 1 1 400px;
+  flex: 1;
   text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 2;
+  order: 2;
+  position: relative;
 }
 
 .hero-image img {
-  height: 38.33;
-  width: 584.01px;
+  width: 100%;
+  max-width: 584.01px;
+  height: auto;
   border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 12px 12px 30px rgba(0, 102, 255, 0.3);
+}
+
+.glow-circle {
+  overflow: hidden;
+}
+
+/* gradient glowing shadow */
+.glow-circle::after {
+  content: '';
+  position: absolute;
+  top: 80%;
+  left: -700px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #0000003a;
+  filter: blur(128px);
+  z-index: 2;
+}
+
+/* Blue glowing shadow */
+.glow-circle::before {
+  content: '';
+  position: absolute;
+  top: 60%;
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #0066ff;
+  filter: blur(70px);
+  z-index: 2;
 }
 
 /* === Responsive Design === */
 @media (max-width: 992px) {
   .hero {
-    flex-direction: column-reverse;
+    flex-direction: column;
     text-align: center;
-    padding: 40px 20px;
+    padding: 60px 20px;
   }
 
   .hero-text {
@@ -180,6 +193,10 @@
   }
 
   .buttons {
+    justify-content: center;
+  }
+  .hero-image {
+    margin-bottom: 30px;
     justify-content: center;
   }
 }
@@ -206,92 +223,97 @@
 }
 
 .features {
-  background: #ffffff;
-  padding: 100px 20px;
-  margin-top: 6px;
-  margin-bottom: 6px;
+  background: rgba(255, 255, 255, 1);
+  padding: 80px 40px;
 }
 
 .section-header {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 .section-header h2 {
-  font-size: 36px;
-  line-height: 40px;
-  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 400;
   color: #0a0a0a;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .section-header p {
   font-size: 18px;
   line-height: 28px;
   color: #495057;
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto;
 }
 
 .features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 40px;
 }
 
 .feature-card {
   background: #ffffff;
   border: 1px solid #dee2e6;
   border-radius: 16px;
-  padding: 30px;
+  padding: 40px;
   text-align: left;
   transition: all 0.3s ease;
 }
 
 .feature-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 .feature-icon {
   width: 56px;
   height: 56px;
-  margin-bottom: 24px;
-}
-
-.feature-icon img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
+  background-color: rgba(0, 102, 255, 0.1);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .feature-card h3 {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400;
   color: #0a0a0a;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .feature-card p {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 26px;
   color: #495057;
 }
 
-/* للجوال */
 @media (max-width: 992px) {
   .features-grid {
-    grid-template-columns: repeat(2, 1fr); /* عمودين في التابلت */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    .feature-card {
+      padding: 32px;
+    }
   }
 }
 
 @media (max-width: 600px) {
   .features-grid {
-    grid-template-columns: 1fr; /* عمود واحد في الجوال */
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .feature-card {
+    padding: 28px;
   }
 }
+
 /* Statistics Section */
 .stats {
   background: linear-gradient(135deg, #1a1a2e 0%, #2d3561 100%);
@@ -313,7 +335,7 @@
 .stat-number {
   font-size: 48px;
   line-height: 48px;
-  font-weight: 700;
+  font-weight: 400;
   color: #ffffff;
   margin-bottom: 8px;
 }
@@ -334,7 +356,6 @@
   }
 }
 
-/*  الجوال: عمود واحد */
 @media (max-width: 600px) {
   .stats-grid {
     grid-template-columns: 1fr;
@@ -346,7 +367,7 @@
   }
 
   .stats {
-    padding: 60px 16px; /* تصغير المسافات للجوال */
+    padding: 60px 16px;
   }
 }
 
@@ -365,7 +386,7 @@
 
 .ready-section h2 {
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 400;
   color: #0a0a0a;
   margin-bottom: 16px;
 }
@@ -390,7 +411,6 @@
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* ===== Responsive Design ===== */
 @media (max-width: 600px) {
   .ready-section {
     padding: 60px 16px;
