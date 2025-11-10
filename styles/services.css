@@ -6,9 +6,11 @@ main .services {
 }
 
 .services-p {
+  /* width: 719px; */
   height: 56px;
   font-size: 20px;
   font-weight: 400px;
+  /* padding-top: 15px; */
   color: #495057;
   text-align: center;
 }
@@ -34,6 +36,7 @@ main .services {
   width: 30%;
   max-width: 400px;
   background-color: white;
+  /* width: 384px; */
   height: 443px;
   border: 1.8px solid #dee2e6;
   border-radius: 16px;
@@ -52,9 +55,9 @@ main .services {
     width: 100%;
   }
 }
-
 .service_icon {
   font-size: 10px;
+  /* text-align: center; */
   width: 63px;
   height: 63px;
   border-radius: 16px;
@@ -69,6 +72,9 @@ main .services {
   width: 40px;
   height: 40px;
 }
+/* .service_icon:hover {
+  box-shadow: 0px 10px 15px -3px #000000;
+} */
 
 #icon1 {
   background-image: linear-gradient(180deg, #2b7fff, #155dfc);
@@ -132,6 +138,11 @@ main .services {
 }
 
 main a {
+  color: white;
+  text-decoration: none;
+  padding-top: 20px;
+}
+.learn-more {
   color: #0066ff;
   text-decoration: none;
   padding-top: 20px;
@@ -153,6 +164,8 @@ main .title {
   font-size: 18px;
   color: #495057;
   margin-bottom: 40px;
+  /* padding-top: 20px;
+  padding-bottom: 40px; */
 }
 
 .pricing-card {
@@ -162,10 +175,15 @@ main .title {
   border: 1px solid #0066ff;
   border-radius: 10px;
   padding: 20px 50px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   display: inline-block;
   position: relative;
+  margin-bottom: 70px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
+
+/* .pricing-card:hover {
+  box-shadow: 0px 25px 25px -12px #000000;
+} */
 
 .mini-title {
   background: #0066ff;
@@ -191,24 +209,47 @@ main .title {
   margin-bottom: 20px;
 }
 
-span {
+main span {
   font-size: 14px;
   color: #495057;
 }
 
-.features {
+main .features {
   text-align: left;
   margin-bottom: 30px;
   margin-top: 50px;
 }
 
-.btn {
+.per_project {
+  font-size: 14px;
+  color: #495057;
+  padding-bottom: 30px;
+}
+
+.pricing_list {
+  margin-bottom: 40px;
+}
+
+.pricing_list_item {
+  font-size: 16px;
+  font-weight: 400px;
+  font-style: normal;
+  color: #495057;
+  padding-bottom: 15px;
+  text-align: left;
+}
+
+.pricing_list_item::marker {
+  color: #0066ff;
+}
+
+main .btn {
   background: #0066ff;
   color: #fff;
-  border: none;
   padding: 12px 25px;
   border-radius: 14px;
   font-size: 16px;
+  text-align: left;
   cursor: pointer;
   width: 100%;
 }
@@ -216,7 +257,6 @@ span {
 .btn:hover {
   background: #1a1a2e;
 }
-
 .get-start {
   text-align: center;
   background-image: linear-gradient(to bottom, #1a1a2e, #2d3561);
@@ -232,6 +272,7 @@ span {
 .start-p {
   font-size: 18px;
   margin-top: 15px;
+  margin-bottom: 40px;
   color: white;
 }
 
@@ -241,11 +282,9 @@ span {
   border: none;
   border-radius: 6px;
   font-size: 16px;
-  cursor: pointer;
   padding: 12px 25px;
-  margin-top: 25px;
+  cursor: pointer;
 }
-
 .btn2:hover {
   background: #1a1a2e;
   color: white;
