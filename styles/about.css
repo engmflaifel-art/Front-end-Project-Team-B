@@ -16,7 +16,7 @@
   font-size: 4rem;
   margin-bottom: 1.5rem;
   color: #1a1a2e;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .about-description {
@@ -35,6 +35,18 @@
   gap: 0.75rem;
   background-color: #eef2ff;
   color: #0052ff;
+  padding: 0.75rem 1.75rem;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.values-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #cccccccb;
+  color: #000;
   padding: 0.75rem 1.75rem;
   border-radius: 100px;
   font-weight: 500;
@@ -69,7 +81,7 @@
   font-size: 1.1rem;
   color: #64666b;
   line-height: 1.7;
-  margin-bottom: 3.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .mission-points {
@@ -121,12 +133,6 @@
 }
 
 .excellence-card {
-  background: white;
-  padding: 2.5rem;
-  border-radius: 16px;
-  position: relative;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  flex: 1;
   display: flex;
   gap: 1.5rem;
 }
@@ -140,6 +146,7 @@
   position: relative;
   padding: 1.5rem;
   border-radius: 14px;
+  height: fit-content;
 }
 
 .excellence-card .card-content {
@@ -187,20 +194,32 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .stat-box {
+  box-shadow: #00000014 6px 5px 17px 7px;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  background: linear-gradient(45deg, #f8f9fa, #ffffff);
+  padding: 1rem 6rem;
+  border-radius: 16px;
+  border: 1px solid #dee2e6;
 }
 
 .stat-number {
   font-size: 3rem;
-  font-weight: 700;
   color: #0052ff;
+  line-height: 1;
+}
+
+.stat-number-designers {
+  background: linear-gradient(90deg, #1a1a2e, #155dfc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
   line-height: 1;
 }
 
@@ -221,16 +240,13 @@
 .join-section h2 {
   font-size: 3rem;
   margin-bottom: 1.5rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .join-section p {
-  color: #a8b1ff;
+  color: #fff;
   font-size: 1.2rem;
-  margin-bottom: 2.5rem;
-  max-width: 650px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 5px auto 2.5rem;
   line-height: 1.6;
 }
 
@@ -241,7 +257,6 @@
   border: none;
   border-radius: 10px;
   font-size: 1.1rem;
-  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -251,6 +266,34 @@
   color: white;
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(0, 82, 255, 0.3);
+}
+
+@media (max-width: 992px) {
+  .expert-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-content h1{
+    font-size: 3em;
+  }
+
+  .expert-stats {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .stat-box {
+    padding: 2rem 3rem;
+  }
 }
 
 /***************************** End About Page Styles ***************************/
