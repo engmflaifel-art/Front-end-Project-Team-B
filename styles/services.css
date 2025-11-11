@@ -9,7 +9,6 @@ main .services {
   /* width: 719px; */
   height: 56px;
   font-size: 20px;
-  font-weight: 400px;
   /* padding-top: 15px; */
   color: #495057;
   text-align: center;
@@ -102,7 +101,7 @@ main .services {
 
 .service_name {
   font-size: 16px;
-  font-weight: 400px;
+  font-weight: 400;
   font-style: normal;
   color: #0a0a0a;
   padding: 10px 0px;
@@ -111,14 +110,12 @@ main .services {
 .service_desc {
   padding: 15px 0px;
   font-size: 16px;
-  font-weight: 400px;
   font-style: normal;
   color: #495057;
 }
 
 .service_list {
   font-size: 16px;
-  font-weight: 400px;
   font-style: normal;
   color: #495057;
   padding: 10px 10px;
@@ -126,7 +123,6 @@ main .services {
 
 .service_list_item {
   font-size: 16px;
-  font-weight: 400px;
   font-style: normal;
   color: #495057;
   padding-bottom: 8px;
@@ -232,7 +228,6 @@ main .features {
 
 .pricing_list_item {
   font-size: 16px;
-  font-weight: 400px;
   font-style: normal;
   color: #495057;
   padding-bottom: 15px;
