@@ -18,7 +18,7 @@
 }
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 600px;
   height: 600px;
@@ -34,7 +34,7 @@
   flex: 1;
   max-width: 600px;
   text-align: left;
-  z-index: 2;
+  z-index: 5;
   order: 1;
 }
 
@@ -154,7 +154,7 @@
 
 /* gradient glowing shadow */
 .glow-circle::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 80%;
   left: -700px;
@@ -168,7 +168,7 @@
 
 /* Blue glowing shadow */
 .glow-circle::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 60%;
   left: 85%;
