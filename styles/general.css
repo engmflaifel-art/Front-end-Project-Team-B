@@ -80,7 +80,7 @@ button {
 /* general styles */
 body {
   /* The font stack tells the browser which fonts to try, in order. */
-  font-family: Arial, "Helvetica Neue",
+  font-family: Arial, 'Helvetica Neue',
     /* A common, slightly better-looking substitute */ Helvetica, sans-serif; /* Essential: generic fallback to any sans-serif font */
   font-size: 16px;
 }
@@ -108,11 +108,25 @@ body {
       header
   --------------------------*/
 /* Keep header stuck to top on scroll */
-header {
+
+header .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+header .logo-container p {
+  font-size: 16px;
+}
+
+.sticky {
   position: sticky;
   top: 0;
   z-index: 1000;
 }
+/* header {
+} */
 
 /* Navigation Styles */
 header nav {
@@ -291,7 +305,7 @@ footer .footer-email {
   }
 }
 
-footer .footer-email input[type="email"] {
+footer .footer-email input[type='email'] {
   border-radius: 4px;
   font-size: 16px;
   background-color: #212529;
@@ -300,7 +314,7 @@ footer .footer-email input[type="email"] {
   border-right-color: transparent;
 }
 
-footer .footer-email input[type="email"],
+footer .footer-email input[type='email'],
 footer .footer-email button {
   border-radius: 14px;
   padding: 1rem;
