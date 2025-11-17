@@ -141,6 +141,12 @@ header nav {
   width: 100%;
 }
 
+@media (max-width: 1024px) {
+  header nav {
+    padding: 1rem;
+  }
+}
+
 header .mobile-menu-btn {
   display: none;
   background: none;
@@ -310,8 +316,9 @@ footer .footer-email input[type='email'] {
   font-size: 16px;
   background-color: #212529;
   outline: none;
-  border-bottom-color: transparent;
-  border-right-color: transparent;
+  border-bottom-color: gray;
+  border-right-color: gray;
+  color: white;
 }
 
 footer .footer-email input[type='email'],
