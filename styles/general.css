@@ -139,6 +139,8 @@ header nav {
   box-shadow: 0 6px 18px rgba(16, 24, 40, 0.06);
   transition: background 200ms ease, box-shadow 200ms ease;
   width: 100%;
+  position: relative;
+  z-index: 1000;
 }
 
 @media (max-width: 1024px) {
